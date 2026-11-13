@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header d-flex align-items-center justify-content-between">
     <a class="brand" href="#home" aria-label="Farabi portfolio home">FAR<span>.</span></a>
-    <nav aria-label="Main navigation">
+    <nav class="d-flex align-items-center gap-3 gap-md-4" aria-label="Main navigation">
       <a href="#about">About</a><a href="#works">Works</a><a href="#contact">Contact</a>
     </nav>
     <a class="header-cta" href="mailto:azrafarabi09@gmail.com">Let's talk <span>↗</span></a>
@@ -30,7 +30,7 @@
         <p class="eyebrow"><span class="eyebrow-dot"></span> CREATIVE PORTFOLIO · 2026</p>
         <h1>Ideas with<br><span>character.</span></h1>
         <p class="hero-intro">I'm <strong>Farabi Akil Azra</strong> — an Illustrator & Graphic Designer turning observations, culture, and imagination into playful visual stories.</p>
-        <div class="hero-actions">
+        <div class="hero-actions d-flex align-items-center gap-3 gap-md-4">
           <a class="button button-primary" href="#works">Explore my work <span>↓</span></a>
           <a class="text-link" href="#about">A little about me <span>↗</span></a>
         </div>
@@ -54,11 +54,19 @@
           <h2>Curious by nature.<br><span>Creative by design.</span></h2>
           <p>I'm Farabi, an Illustrator &amp; Graphic Designer with a background in Sociology. My work explores illustration, character, branding, and visual storytelling — combining observation of people and culture with a playful visual approach.</p>
           <div class="software"><span class="software-title">TOOLS I WORK WITH</span>
-            <div class="software-list">
-              <span>PS</span>
-              <span>Ai</span>
-              <span>Procreate</span>
-              <span>Canva</span>
+            <div class="software-list d-flex gap-2" aria-label="Design software">
+              <a href="https://www.adobe.com/creativecloud/business/teams/photoshop.html" target="_blank">
+                <img class="software-icon" src="assets/icon%20logo/logo-PS.svg" alt="Adobe Photoshop" width="43" height="43">
+              </a>
+              <a href="https://www.adobe.com/creativecloud/business/teams/illustrator.html#modal-hash" target="_blank">
+                <img class="software-icon" src="assets/icon%20logo/logo-AI.svg" alt="Adobe Illustrator" width="43" height="43">
+              </a>
+              <a href="https://procreate.com/" target="_blank">
+                <img class="software-icon" src="assets/icon%20logo/logo-Procreate.svg" alt="Procreate" width="43" height="43">
+              </a>
+              <a href="https://www.canva.com/" target="_blank">
+                <img class="software-icon" src="assets/icon%20logo/logo-Canva.svg" alt="Canva" width="43" height="43">
+              </a>
             </div>
           </div>
           <div class="about-social">
@@ -79,18 +87,36 @@
       </div>
 
       <article class="project project-character">
-        <div class="project-copy"><span class="project-number">01 — CHARACTER DESIGN</span>
-          <h3>Characters<br>with a story.</h3>
-          <p>Exploring personality through visual character, from expressive silhouettes to detailed character studies.</p>
-          <div class="color-palette"><i></i><i></i><i></i><i></i></div>
-        </div>
-        <div class="project-image character-image">
-          <img src="assets/character-sketch-1.webp" alt="Character design explorations">
-           <img src="assets/character-sketch-1.webp" alt="Character design explorations">
-        </div>
+          <div class="project-copy">
+              <span class="project-number">01 — CHARACTER DESIGN</span>
+
+              <h3>Characters<br>with a story.</h3>
+
+              <p>
+                  Exploring personality through visual character,
+                  from expressive silhouettes to detailed character studies.
+              </p>
+
+              <div class="color-palette">
+                  <i></i><i></i><i></i><i></i>
+              </div>
+          </div>
+
+          <div class="project-image character-image">
+              <a><img src="assets/character-sketch-1.webp" alt="Character design exploration 1"></a>
+              <a><img src="assets/character-sketch-2.webp" alt="Character design exploration 2"></a>
+              <a><img src="assets/character-sketch-3.webp" alt="Character design exploration 3"></a>
+              <a><img src="assets/character-sketch-4.webp" alt="Character design exploration 4"></a>
+          </div>
       </article>
 
-      <article class="project project-illustration"><div class="project-heading"><span class="project-number">02 — ILLUSTRATION</span><h3>Illustration<br>that speaks.</h3></div><div class="image-pair"><img src="assets/illustration-main.webp" alt="Colorful editorial illustration"><img src="assets/illustration-editorial-1.webp" alt="Editorial illustration for digital publication"><img src="assets/illustration-editorial-2.webp" alt="Atmospheric digital illustration"></div><p class="project-description">During my internship at Dabtive Agency, I was involved in developing visual content for Catra Warta, a digital media platform under Dabtive Agency. I was responsible for creating illustrations to support editorial articles and digital publication materials.</p></article>
+      <article class="project project-illustration"><div class="project-heading"><span class="project-number">02 — ILLUSTRATION</span><h3>Illustration<br>that speaks.</h3></div>
+        <div class="image-pair"><img src="assets/illustration-main.webp" alt="Colorful editorial illustration">
+          <img src="assets/illustration-editorial-1.webp" alt="Editorial illustration for digital publication">
+          <img src="assets/illustration-editorial-2.webp" alt="Atmospheric digital illustration">
+        </div>
+        <p class="project-description">During my internship at Dabtive Agency, I was involved in developing visual content for Catra Warta, a digital media platform under Dabtive Agency. I was responsible for creating illustrations to support editorial articles and digital publication materials.</p>
+      </article>
 
       <article class="project project-jersey"><div class="project-heading"><span class="project-number">03 — APPAREL DESIGN</span><h3>Desain jersey.</h3></div>
         <div class="jersey-gallery">
@@ -134,6 +160,6 @@
 
     <section class="contact section-wrap" id="contact"><div class="section-kicker">03 / HAVE A PROJECT IN MIND?</div><p class="eyebrow">LET'S MAKE SOMETHING GOOD</p><h2>Let's work<br><span>together.</span></h2><a class="contact-email" href="mailto:azrafarabi09@gmail.com">azrafarabi09@gmail.com <span>↗</span></a><div class="contact-bottom"><span>FARABI AKIL AZRA · A.K.A FAR</span><a href="https://www.instagram.com/azrafrbiii" target="_blank" rel="noreferrer">@azrafrbiii ↗</a></div></section>
   </main>
-  <footer><span>© 2026 FARABI AKIL AZRA</span><span>MADE WITH CURIOSITY &amp; CREATIVITY</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <footer class="d-flex justify-content-between"><span>© 2026 FARABI AKIL AZRA</span><span>MADE WITH CURIOSITY &amp; CREATIVITY</span><a href="#home">BACK TO TOP ↑</a></footer>
 </body>
 </html>
