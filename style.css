@@ -118,9 +118,11 @@ h1 span,h2 span{color:var(--orange)}
 .color-palette i:nth-child(3){background:#efe0c0}
 .color-palette i:nth-child(4){background:#3c454a}
 .project-heading{margin-bottom:30px}
-.image-pair{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px;align-items:stretch}
-.image-pair img{width:100%;height: 80%; align-self: stretch; object-fit:cover; background:#eee8d9}
 .project-description{max-width:760px;margin:22px 0 0 auto}
+/* #region illustration */
+.image-pair{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px;align-items:stretch}
+.image-pair img{width:100%;height: 100%; align-self: stretch; object-fit:cover; background:#eee8d9}
+/* #endregion */
 /* #region jersey */
 .jersey-gallery{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:15px;background:white;padding:20px}
 .jersey-gallery img{width:100%;height:260px;object-fit:contain;}
@@ -275,18 +277,11 @@ footer a{color:#e98a55}
     }
     .image-pair
     {
-        
         grid-template-columns:1fr 1fr
     }
-    .image-pair img
-    {
-        
-        height:220px
-    }
     .image-pair img:first-child
-    {
-        
-        grid-column:span 2;height:280px
+    {   
+        grid-column:span 2;
     }
     .jersey-gallery
     {
